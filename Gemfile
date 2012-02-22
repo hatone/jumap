@@ -14,7 +14,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-gem 'rake'
+gem 'rake', '0.8.7'
 
 # in production environments by default.
 group :assets do
