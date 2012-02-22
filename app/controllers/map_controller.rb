@@ -4,7 +4,6 @@ def index
 
   def create 
     
-    return redirect_to plot_index_path 
   end
 
   def new
@@ -16,7 +15,7 @@ def index
   end
 
   def show
-  render :text => "show"
+  
   end
 
   def update

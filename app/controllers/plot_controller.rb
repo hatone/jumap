@@ -1,10 +1,19 @@
+require "pp"
 class PlotController < ApplicationController
   def index
   end
 
-  def create 
-    
-    return redirect_to plot_index_path 
+  def create
+    lat = params[:lat]
+    long = params[:long]
+    msg = params[:message]
+
+    Spot.append(
+        :lat => lat,
+        :long => long,
+        :msg => msg
+        )
+    redirect_to root_path 
   end
 
   def new
