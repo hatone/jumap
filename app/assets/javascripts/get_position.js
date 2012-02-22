@@ -13,6 +13,7 @@ $(function(){
             url: "/plot",
             data: data,
             success: function() {
+            $('#mes').val("");
             }
         });
       }
