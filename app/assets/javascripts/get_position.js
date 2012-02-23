@@ -8,6 +8,7 @@ $(function(){
         var msg = $('#mes').val();
        
         var data = 'lat=' + position.coords.latitude  + '&long=' + position.coords.longitude + "&message=" + msg;
+        $('#mes').val("");
         $.ajax({
             type: "POST",
             url: "/plot",

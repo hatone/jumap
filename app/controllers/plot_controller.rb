@@ -14,7 +14,6 @@ class PlotController < ApplicationController
         :long => long,
         :msg => msg
         )
-    redirect_to root_path 
   end
 
   def new
